@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tbadhit.myworkmanager">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+<!-- android:usesCleartextTraffic="true" berfungsi supaya tidak terjadi error pada perangkat dengan
+     Android versi Pie ke atas. Hal ini karena Anda mengakses API dengan awalan http, bukan https.
+     Pada perangkat Android P ke atas penggunaan ClearTextTraffic bernilai false secara default untuk
+     keamanan. Untuk itu, Anda perlu mengaktifkannya supaya proses pengambilan data dari API berjalan
+     lancar-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyWorkManager">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
