@@ -122,7 +122,7 @@ class MyWorker(context: Context, workerParameters: WorkerParameters): Worker(con
     // (1)
     companion object {
         private val TAG = MyWorker::class.java.simpleName
-        const val APP_ID = "23373b345890d776e2d25e7e052061c1"
+        const val APP_ID = ""
         const val EXTRA_CITY = "city"
         const val NOTIFICATION_ID = 1
         const val CHANNEL_ID = "channel_01"
